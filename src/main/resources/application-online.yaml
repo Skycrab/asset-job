@@ -1,0 +1,35 @@
+
+env:
+  mode: online
+
+kafka:
+  servers: xxx
+  clusterId: xx
+  appId: xx
+  passwd: xx
+  groupId: asset-job
+  #建议500,务必要改
+  lingerMs: 500
+  batchSize: 100000
+  topic: data-asset
+
+metric:
+  #采样数量
+  sampleCount: 1000000
+  #分箱数量
+  discretizeNumBucket: 10
+  #数字类型缺失值
+  numberMissingValue: [0,-1,-999,-9999]
+
+scene:
+  tableName: default.dm_asset_scene
+  #场景分区列
+  scenePartitionColumn: scene
+  #特征日期列
+  featureDateColumn: feature_date
+  #label列
+  labelColumn: label
+  #role列
+  roleColumn: role
+
+

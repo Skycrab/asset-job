@@ -1,0 +1,4 @@
+default,sample,age,1,10,300,200,100,3000,2000,1000
+default,sample,name,1,10,100,200,100,1000,2000,1000
+default,sample,last_login_time,0,0,0,0,0,0,0,0
+default,sample,uid,1,10,300,200,100,3000,2000,1000
